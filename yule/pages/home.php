@@ -1,3 +1,3 @@
-    <?php include("pages/header.php"); ?>
+<?php include("header.php"); ?>
 </body>
 </html>
