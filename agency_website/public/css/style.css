@@ -1,0 +1,194 @@
+@font-face {
+  font-family: "CaviarDreams";
+  src: url(../font/CaviarDreams.ttf);
+ }
+
+body{
+  font-family: "CaviarDreams", sans-serif;
+  margin:0px;
+}
+
+/*General*/
+h1, h2, h3{
+  text-align: center;
+  color:#c81b18;
+}
+
+h1{
+  font-weight:700;
+  color:#412512;
+  font-size:3rem;
+}
+
+.studio, .projects, .team{
+  margin:10px;
+  padding:20px;
+}
+
+ul{
+  padding:0;
+}
+
+li{
+    list-style:none;
+}
+
+/*navigation*/
+.navigation{
+  width:100%;
+  position:fixed;
+  z-index:1;
+  background-color:white;
+}
+.navigation .navigation-image a{
+  left: .5rem;
+  top: .5rem;
+  position: absolute;
+  height: 75%;
+  width: 100px;
+  background-image:url(../images/logo.png);
+  background-position: left top; 
+  background-repeat: no-repeat; 
+  background-size: contain;
+}
+.navigation nav{
+  text-align:right;
+  padding:1.5rem
+}
+
+.navigation nav a {
+  text-decoration:none;
+  color:#412512;
+  font-weight:700;
+  padding: 0 10px;
+
+}
+.navigation nav a:hover{
+  text-decoration:underline;
+  color:#e84c40
+}
+
+/*Hero -image*/
+.hero-image{
+  position:relative;
+  width:100%;
+  height:600px;
+  background-image:url(../images/background.jpg);
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  
+}
+.hero-image h1{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  padding:1rem;
+  background-color:rgba(255,255,255,0.8)
+}
+
+/*Studio*/
+
+.studio p{
+  text-align:left;
+}
+
+/*Projects*/
+
+.projects {
+  text-align:center;
+}
+
+.projects .image-contianer{
+  display:inline-block;
+  width:45%;
+  margin:.5rem;
+}
+
+.projects img{
+  width:100%;
+}
+
+/*Team*/
+.team{
+  text-align:center;
+}
+
+.team .person{
+  width:20%;
+  display:inline-block;
+  background-color:#e0e0e0;
+  padding:1rem;
+  margin:.5rem;
+}
+
+.team .person img{
+  width: 50%;
+  border-radius: 100px;
+}
+
+.team .person a{
+  text-decoration:none;
+  background-color:#f7b89a;
+  color:#e84c40;
+  font-size:15px;
+  font-weight:900;
+  padding:5px 7px;
+  border-radius:25px;
+}
+
+/*cta*/
+
+.cta{
+  text-align:center;
+}
+.cta button {
+  padding:10px 15px;
+  border:none;
+  background-color:#e84c40;
+  font-size:20px;
+}
+
+.cta button:hover{
+  background-color:#412512;
+}
+
+.cta a{
+  text-decoration:none;
+  color:white;
+}
+
+/*footer*/
+footer{
+  font-weight:700;
+  text-shadow: 0 0 5px #eee;
+  text-align:center;
+  padding:.5rem;
+  margin-top:2rem;
+  background-image:url(../images/pattern.png);
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+footer img{
+  background-color:rgba(255,255,255,0.8);
+  padding:0.5rem;
+  width:100px;
+}
+
+@media (max-width: 550px) { 
+  .navigation .navigation-image a{
+    width: 100%;
+    height:50px;
+    background-position: center top;
+  }
+  .navigation nav{
+    text-align: center;
+    margin-top: 50px;
+  }
+  .team .person {
+    width: 50%;
+  }
+}
