@@ -1,6 +1,6 @@
 <?php
     function getConnection() {
-        $dsn = 'mysql:dbname=testdb;host=localhost';
+        $dsn = 'mysql:dbname=yule_bdd;host=localhost';
         $user = 'root';
         $password = '';
 
