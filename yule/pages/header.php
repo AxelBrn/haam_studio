@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/public/css/bulma.css" rel="stylesheet">
     <link href="/public/css/stylesheet.css" rel="stylesheet">
+    <link href="/public/css/axel.css" rel="stylesheet">
     <script src="/public/script/script.js"></script>
     <script src="https://unpkg.com/eva-icons"></script>
     <title>Yule - Brought to you</title>

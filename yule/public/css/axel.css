@@ -1,0 +1,37 @@
+.box-products {
+    min-height: 420px;
+    background-color: #D7D2C3;
+    border-radius: 0;
+}
+
+.card-product {
+    width: 20vw;
+    height: 20vw;
+    min-height: 300px;
+    min-width: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.max-size {
+    height: 100%;
+    width: 100%;
+}
+
+.transparent-black {
+    background-color: rgba(0,0,0, 0.3);
+}
+
+a.button.is-success.is-rounded {
+    background-color: #326E24 !important;
+}
+
+.elevation {
+    -webkit-box-shadow: 0px 6px 13px -1px rgba(0,0,0,0.1); 
+    box-shadow: 0px 6px 13px -1px rgba(0,0,0,0.1);
+}
+
+.footer {
+    background-color: #F4B500;
+}
+
