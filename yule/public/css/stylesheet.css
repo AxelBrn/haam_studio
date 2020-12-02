@@ -17,18 +17,28 @@ body{
   max-height: 4rem;
 }
 
+.navbar-menu a, 
+a.navbar-item{
+  font-weight: 600!important;
+  color:#333!important;
+  font-size:14px;
+
+}
+
+
+
 .navbar-menu a:hover{
   background-color:transparent !important;
   color:#EEC219 !important;
 }
 
+a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active{
+  color:#EEC219 !important;
+  background-color:transparent !important;
+}
+
 /*burger icon*/
-.navbar-burger span{
-  height:2px;
-}
-.navbar-burger span:nth-child(1) {
-  top: calc(50% - 5px);
-}
-.navbar-burger span:nth-child(3) {
-  top: calc(50% + 3px);
+.navbar-burger span:nth-child(2) {
+  top: calc(50% - 1px);
+  height: 0.5px;
 }
