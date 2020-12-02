@@ -1,0 +1,9 @@
+/*general*/
+@font-face {
+  font-family: "Futura";
+  src: url(../fonts/Futura/FuturaPTMedium.otf);
+ }
+ 
+body{
+  font-family: "Futura", sans-serif;
+}
