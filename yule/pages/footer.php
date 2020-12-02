@@ -1,7 +1,38 @@
-        <div class="container" style="height: 380px">
+        <?php
+            require_once('repository/categoriesRepository.php');
+            $categories = getAll();
+        ?>
+        
+        <div class="box is-flex is-justify-content-center is-align-items-center" style="min-height: 420px; background-color: #D7D2C3; border-radius: 0">
+            <div class="mt-5 is-justify-content-center is-align-items-center">
+            <h2 class="title has-text-weight-bold has-text-right is-size-1">The products</h2>
+                <div class="is-flex is-flex-direction-row is-flex-wrap-wrap is-justify-content-center">
+                    <?php
+                        for($i = 0; $i < count($categories); $i++) {
+                            $class = "mx-3 mt-3";
+                            if($i == (count($categories) - 1)) {
+                                $class = "ml-3 mt-3";
+                            }
+                            echo "
+                            <div class='".$class."'>
+                                <div style='width: 20vw; height: 20vw; min-height: 300px; min-width: 300px;
+                                 background-image: url(public/images/footer/".$categories[$i]->card_img."); 
+                                 background-repeat: no-repeat; background-size: cover'>
+                                    <div style='width: 100%; height: 100%; background-color: rgba(0,0,0, 0.3)'>
+                                    </div>
+                                </div>
+                                <p class='has-text-centered mt-4'>".$categories[$i]->label."</p>
+                                </div>
+                            ";
+                        }
+                    ?>
+                </div>
+            </div>
+        </div>
+        <div class="container is-flex is-align-items-center" style="min-height: 380px">
             <div class="container is-flex is-justify-content-center is-align-items-center" style="width: 100%; height: 100%;">
                 <div>
-                    <h1 class="title has-text-weight-bold has-text-centered is-size-1">Newsletter</h1>
+                    <h2 class="title has-text-weight-bold has-text-centered is-size-1">Newsletter</h2>
                     <p class="mx-5" style="max-width: 500px">
                         Etiam nec odio vitae ligula venenatis pretium. Proin sit amet ligula ultrices, porta libero vel, dignissim lacus.
                         Etiam nec odio vitae ligula venenatis pretium. Proin sit amet ligula ultrices, porta libero vel, dignissim lacus.

@@ -21,6 +21,7 @@ CREATE TABLE categories(
    id SMALLINT UNSIGNED AUTO_INCREMENT,
    label VARCHAR(150),
    banner VARCHAR(250),
+   card_img VARCHAR(250),
    CONSTRAINT PK_Categories PRIMARY KEY(id)
 )ENGINE=INNODB;
 
@@ -63,11 +64,8 @@ INSERT INTO roles (id, label) VALUES
 (NULL, 'customer'),
 (NULL, 'professional');
 
-INSERT INTO categories (id, label) VALUES
-(NULL, 'Fashion'),
-(NULL, 'Food'),
-(NULL, 'Decoration');
-
-
-
+INSERT INTO categories (id, label, banner, card_img) VALUES
+(NULL, 'Fashion', 'fdgnf', 'clothes-product.jpg'),
+(NULL, 'Food', 'dfsgdh', 'food-product.jpg'),
+(NULL, 'Decoration', 'xfcgvhjkl', 'deco-product.jpg');
 
