@@ -19,12 +19,12 @@
     <div class="container is-flex is-flex-direction-column" >
         <h2 class="title subtitle has-text-left">Welcome!</h2>
         <p>Considering the state of the world and the country at the moment local christmas markets have been shut down. To bring you that holiday cheer and local christmas market experience we have decided to bring the markets to you.<br>You can find your favourite market products here on yule. </p>
-    
+        <img class="" src="/public/images/line/accueil+contact.png">
     </div>
-    <img class="is-pulled-right" src="/public/images/line/accueil+contact.png">
+    
 </div>
 
-<div class="is-dark">
+<div class=" container is-flex is-flex-direction-column is-dark">
     <div></div>
 </div>
 
