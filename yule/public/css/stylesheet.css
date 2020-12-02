@@ -3,10 +3,21 @@
   font-family: "Futura";
   src: url(../fonts/Futura/FuturaPTMedium.otf);
  }
+
+@font-face {
+  font-family: "LouisGeorge";
+  src: url(../fonts/LouisGeorgeCafe.ttf);
+}
  
 body{
   font-family: "Futura", sans-serif;
   color:#222626!important;
+}
+
+p{
+  font-family: "LouisGeorge", sans-serif;
+  font-weight:400!important;
+  font-size:15px!important;
 }
 
 /*header*/
@@ -63,4 +74,14 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 .hero h2.subtitle{
   color:#EEC219 !important;
   text-shadow: 0 0 10px #222626;
+}
+
+/*welcome part*/
+#welcome p{
+  max-width:600px;
+}
+
+#welcome img{
+  margin-top:-50px;
+}
 }
