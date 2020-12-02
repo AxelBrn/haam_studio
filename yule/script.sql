@@ -68,3 +68,5 @@ INSERT INTO categories (id, label) VALUES
 (NULL, 'Decoration');
 
 
+
+

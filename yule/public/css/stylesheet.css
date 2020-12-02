@@ -18,8 +18,8 @@ body{
 }
 
 .navbar-menu a:hover{
-  background-color:transparent;
-  color:#EEC219;
+  background-color:transparent !important;
+  color:#EEC219 !important;
 }
 
 /*burger icon*/
