@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/public/css/bulma.css" rel="stylesheet">
     <link href="/public/css/stylesheet.css" rel="stylesheet">
+    <link href="/public/script/script.js">
     <script src="https://unpkg.com/eva-icons"></script>
     <title>Yule - Brought to you</title>
 </head>
@@ -12,19 +13,19 @@
   <header>
 
     <div id="header" class="cotainer">
-      <nav class="navbar is-white p-4 ">
-        <div class="navbar-brand">
+      <nav class="navbar is-white p-4 level ">
+        <div class="navbar-brand level-item has-text-centered">
           <a class="navbar-item" href="/?page=home">
             <img src="/public/images/logo.png">
           </a>
-          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </a>
         </div>
         <div class="navbar-menu ">
-          <div class="navbar-end is-pulled-right">
+          <div class="navbar-end is-pulled-right level-item">
             <a href="/?page=fashion" class="navbar-item px-5">Fashion</a>
             <a href="/?page=food" class="navbar-item px-5">Food</a>
             <a href="/?page=decoration" class="navbar-item px-5">Decoration</a>
@@ -41,9 +42,6 @@
               </span>
             </a>
             
-              
-
-              
             </div>
           </div>
       </nav>
@@ -52,5 +50,5 @@
   </header>
 
   <script>
-      eva.replace()
-    </script> 
+    eva.replace()
+  </script> 
