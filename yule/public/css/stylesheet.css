@@ -7,3 +7,28 @@
 body{
   font-family: "Futura", sans-serif;
 }
+
+/*header*/
+.navbar-brand a {
+  padding:0;
+}
+
+.navbar-item img {
+  max-height: 4rem;
+}
+
+.navbar-menu a:hover{
+  background-color:transparent;
+  color:#EEC219;
+}
+
+/*burger icon*/
+.navbar-burger span{
+  height:2px;
+}
+.navbar-burger span:nth-child(1) {
+  top: calc(50% - 5px);
+}
+.navbar-burger span:nth-child(3) {
+  top: calc(50% + 3px);
+}
