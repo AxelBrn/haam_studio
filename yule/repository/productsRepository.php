@@ -11,3 +11,17 @@
         }
         return $data;
     }
+
+    function getProductsBySubCateg($id) {
+        $con = getConnection();
+        $sql = "SELECT * FROM products 
+                WHERE id_sub_category = $id";
+        $result = $con->query($sql);
+        while($donnees = $result->fetch(PDO::FETCH_OBJ)) {
+            $data[] = $donnees;
+        }
+        if(isset($data)) {
+            return $data;
+        }
+        return [];
+    }
