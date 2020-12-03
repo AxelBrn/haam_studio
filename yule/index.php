@@ -1,12 +1,23 @@
 <?php
+    require_once('pages/header.php');
     if(isset($_GET['page'])) {
         switch($_GET['page']) {
             case 'food': {
-                echo 'Hello in food page';
+                include('pages/categorie.php');
                 break;
             }
+            case 'fashion': {
+                include('pages/categorie.php');
+                break;
+            }
+            case 'decoration': {
+                include('pages/categorie.php');
+                break;
+            }
+
         }
     } else {
         require_once('pages/home.php');
     }
+    require_once('pages/footer.php');
 ?>

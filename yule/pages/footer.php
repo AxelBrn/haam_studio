@@ -18,7 +18,7 @@
                                 <div class='card-product' style='background-image: url(public/images/footer/".$categories[$i]->card_img."); 
                                  '>
                                     <div class='is-flex is-justify-content-center is-align-items-center max-size transparent-black'>
-                                    <a class='button is-success is-rounded' href='/?page=".strtolower($categories[$i]->label)."'>Shop</a>
+                                    <a class='button is-success is-rounded' href='/?page=".strtolower($categories[$i]->label)."&idCateg=".$categories[$i]->id."'>Shop</a>
                                     </div>
                                 </div>
                                 <p class='has-text-centered mt-4'>".$categories[$i]->label."</p>

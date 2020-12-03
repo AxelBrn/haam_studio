@@ -10,3 +10,11 @@
         }
         return $data;
     }
+
+    function getById($id) {
+        $con = getConnection();
+        $sql = "SELECT * FROM categories WHERE id = $id";
+        $result = $con->query($sql);
+
+        return $result->fetch(PDO::FETCH_OBJ);
+    }
