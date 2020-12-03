@@ -52,6 +52,10 @@ p{
   max-height: 4rem;
 }
 
+.navbar svg:hover{
+  fill:#EEC219;
+}
+
 .navbar-menu a, 
 a.navbar-item{
   font-weight: 600!important;
