@@ -14,7 +14,7 @@
                 include('pages/categorie.php');
                 break;
             }
-            case 'conatct': {
+            case 'contact': {
                 include('pages/contact.php');
                 break;
             }

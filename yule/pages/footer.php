@@ -70,4 +70,7 @@
             </div>
         </footer>
     </body>
+    <script>
+        eva.replace()
+    </script>
 </html>

@@ -54,8 +54,4 @@ $categories = getAllCategories();
       </nav>
     </div>
 
-  </header>
-
-  <script>
-    eva.replace()
-  </script> 
+  </header> 
