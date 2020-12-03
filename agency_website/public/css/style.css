@@ -50,6 +50,7 @@ li{
   background-position: left top; 
   background-repeat: no-repeat; 
   background-size: contain;
+  margin-left:30px;
 }
 .navigation nav{
   text-align:right;
