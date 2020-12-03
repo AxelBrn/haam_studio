@@ -14,6 +14,10 @@
                 include('pages/categorie.php');
                 break;
             }
+            case 'conatct': {
+                include('pages/contact.php');
+                break;
+            }
 
         }
     } else {

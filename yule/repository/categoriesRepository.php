@@ -1,7 +1,7 @@
 <?php
     require_once "controller/connection.php" ;
 
-    function getAll() {
+    function getAllCategories() {
         $con = getConnection();
         $sql = "SELECT * FROM categories";
         $result = $con->query($sql);
@@ -11,7 +11,7 @@
         return $data;
     }
 
-    function getById($id) {
+    function getCategoryById($id) {
         $con = getConnection();
         $sql = "SELECT * FROM categories WHERE id = $id";
         $result = $con->query($sql);

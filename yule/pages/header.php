@@ -31,9 +31,9 @@
         <div class="navbar-menu" id="navMenu">
           <div class="navbar-end is-pulled-right level-item" id="navMenuChild" >
 <?php
-$categories = getAll();
+$categories = getAllCategories();
   for($i = 0; $i < count($categories); $i++ ){
-    echo ("<a href=\"/?page=".strtolower($categories[$i]->label)."\" class=\"navbar-item px-5\">".$categories[$i]->label."</a>");
+    echo ("<a href=\"/?page=".strtolower($categories[$i]->label)."&idCateg=".$categories[$i]->id."\" class=\"navbar-item px-5\">".$categories[$i]->label."</a>");
   }
 ?>
             <a href="/?page=news" class="navbar-item px-5">News</a>

@@ -1,6 +1,6 @@
         <?php
             require_once('repository/categoriesRepository.php');
-            $categories = getAll();
+            $categories = getAllCategories();
         ?>
         
         <div class="box box-products is-flex is-justify-content-center is-align-items-center">
