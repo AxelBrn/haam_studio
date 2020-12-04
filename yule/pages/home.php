@@ -29,7 +29,7 @@
                     </div>
                     <img class="" src="/public/images/homepage/image1.png">
                     <p>Were you disappointed this year not to be able to eat your favoritechristmas market foods, or get a glass of hot mulled wine ? well we have a solution to your problem. With yule our artisana who usually sell food hav adapted themselves to be able to send all of your christmas market favorites right to your door.</p>
-                    <a class='button is-success is-rounded is-pulled-right' href='/?page=food'>Shop for food</a>
+                    <a class='button is-success is-rounded is-pulled-right' href='/?page=food&idCateg=2'>Shop for food</a>
                 </div>
             </div>
         </div>
@@ -43,7 +43,7 @@
                     </div>
                     <img class="display-image" src="/public/images/homepage/image2.png">
                     <p>Are you looking for decorations to up your decoration game this year ? Well look no further, our christams market artisan are selling the best decorations you can find. From baubles to special ornaments, to tinsel,to christmas lights and even the best Tress you can find. </p>
-                    <a class='button is-success is-rounded' href='/?page=food'>Shop for decorations</a>
+                    <a class='button is-success is-rounded' href='/?page=decoration&idCateg=3'>Shop for decorations</a>
                 </div>
                 <img class="hide-image" src="/public/images/homepage/image2.png">
             </div>
@@ -59,7 +59,7 @@
                         <h2 class="title has-text-weight-bold has-text-right is-size-1">Fashion</h2>
                     </div>
                     <p>Do you want the perfect look for christmas day ? Need some new outerwear to keep you warm this winter? well we have the perfect category for you. Check out our fashion products to discover what clothe items our artisans are selling to make you look FABULOUS. </p>
-                    <a class='button is-success is-rounded' href='/?page=food'>Shop in fashion</a>
+                    <a class='button is-success is-rounded' href='/?page=fashion&idCateg=1'>Shop in fashion</a>
                     <img class="hide-image" src="/public/images/line/accueil.png">
                 </div>
             </div>
@@ -85,7 +85,7 @@
             <img class="display-image" src="/public/images/line/accueil2.png " style="width:100%;">
             <img class="" src="/public/images/homepage/image4.png" >
             <div class="mt-5 is-flex is-justify-content-center is-align-items-center">
-                <a class='button is-success is-rounded' href='/?page=food'>Read about Covid measures</a>
+                <a class='button is-success is-rounded' href='/?page=news'>Read about Covid measures</a>
             </div>
         </div>
     </div>

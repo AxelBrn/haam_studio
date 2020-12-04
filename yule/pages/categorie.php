@@ -21,19 +21,20 @@
   </div>
 </div>
 
-<div class="container px-6 my-6">
-    <div class="is-flex is-flex-direction-row is-align-items-center is-flex-wrap-wrap mx-6 py-6">
+<div class="container px-6 my-6 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
+    <div>
+    <div class="is-flex is-flex-direction-row is-flex-wrap-wrap mx-6 py-6">
     <?php
         for($i = 0; $i < count($subCategories); $i++) {
             if(isset($_GET['subCateg']) && $subCategories[$i]->id == $_GET['subCateg']) {
-                echo "<a href='?page=".strtolower($category->label)."&idCateg=".$category->id."&subCateg=".$subCategories[$i]->id."' class='checkbox mr-6 is-flex is-flex is-align-items-center'>
+                echo "<a id='subCateg' href='?page=".strtolower($category->label)."&idCateg=".$category->id."&subCateg=".$subCategories[$i]->id."' class='checkbox mr-6 is-flex is-flex is-align-items-center'>
                         <span class='icon mr-1'>
                             <i data-eva='checkmark-square-2-outline'></i>
                         </span>
                         ".$subCategories[$i]->label."
                     </a>";
             } else {
-                echo "<a href='?page=".strtolower($category->label)."&idCateg=".$category->id."&subCateg=".$subCategories[$i]->id."' class='checkbox mr-6 is-flex is-flex is-align-items-center'>
+                echo "<a id='subCateg' href='?page=".strtolower($category->label)."&idCateg=".$category->id."&subCateg=".$subCategories[$i]->id."' class='checkbox mr-6 is-flex is-flex is-align-items-center'>
                         <span class='icon mr-1'>
                             <i data-eva='square-outline'></i>
                         </span>
@@ -42,14 +43,14 @@
             }
         }
         if(isset($_GET['subCateg'])) {
-            echo "<a href='?page=".strtolower($category->label)."&idCateg=".$category->id."' class='checkbox mr-6 is-flex is-flex is-align-items-center'>
+            echo "<a id='subCateg' href='?page=".strtolower($category->label)."&idCateg=".$category->id."' class='checkbox mr-6 is-flex is-flex is-align-items-center'>
                         <span class='icon mr-1'>
                             <i data-eva='square-outline'></i>
                         </span>
                         See everything
                     </a>";
         } else {
-            echo "<a href='?page=".strtolower($category->label)."&idCateg=".$category->id."' class='checkbox mr-6 is-flex is-flex is-align-items-center'>
+            echo "<a id='subCateg' href='?page=".strtolower($category->label)."&idCateg=".$category->id."' class='checkbox mr-6 is-flex is-flex is-align-items-center'>
                         <span class='icon mr-1'>
                             <i data-eva='checkmark-square-2-outline'></i>
                         </span>
@@ -62,15 +63,17 @@
     <div class="mx-6 mb-6 is-flex is-flex-direction-row is-flex-wrap-wrap">
         <?php
             for($i = 0; $i < count($products); $i++) {
-                echo "<div class='mr-6 my-6'>
+                echo "<div class='my-6 mr-6'>
                 <div class='product' style='background-image: url(public/images/products/".$products[$i]->image.");'>
                 </div>
                 <p class'mt-2'><strong>".$products[$i]->label."</strong><br>
                 ".$products[$i]->price." €
                 </p>
+                <p>By ".$products[$i]->company."</p>
             </div>";
             }
         ?>
+    </div>
     </div>
 
 </div>

@@ -42,3 +42,7 @@ a.button.is-success.is-rounded {
     background-size: cover;
 }
 
+a#subCateg {
+    color: black;
+}
+
